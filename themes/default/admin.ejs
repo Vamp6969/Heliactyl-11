@@ -48,6 +48,7 @@
 					You have created a coupon code with the name of: <%= req.query.code %>
 					</div>
 				    <% } %>
+            <%- include('./components/ads') %>
             <div class="page-header">
               <h3 class="page-title"> Admin </h3>
             </div>
@@ -55,10 +56,10 @@
               <div class="col-md-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Heliactyl Version</h4>
+                    <center><h4 class="card-title">Heliactyl Version</h4></center>
                     <form class="forms-sample">
                       <div class="form-group">
-              <p id="latestversion"><span>Fetching...</span></p>
+              <center><p id="latestversion"><span>Fetching...</span></p></center>
                                     <script>
                                         fetch("https://heliactyl.github.io/Heliactyl-11/")
                                             .then(res => Promise.resolve(res.json()).then(ver => {
