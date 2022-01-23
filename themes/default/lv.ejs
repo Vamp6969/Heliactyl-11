@@ -12,18 +12,19 @@
           <!-- partial -->
           <div class="main-panel">
             <div class="content-wrapper">
+              <%- include('./components/ads') %>
             <div class="page-header">
               <h3 class="page-title"> Linkvertise Earning </h3>
             </div>
-            <%- include('./components/ads') %>
               <div class="row">
                 <div class="col-md-12 grid-margin stretch-card">
                                     <div class="card">
                     <div class="card-body">
 										<% if(req.query.s == "done") { %>
-										<p>Success! The configured amount of coins were added to your account.<br>Want to complete another? press the button below!<br><br><button class="btn btn-primary" href="/lv/gen" onclick="window.location.href = '/lv/gen'">Generate Link</button></p>
+										<center><p>Success! The configured amount of coins were added to your account.<br>Want to complete another? Press the button below!<br><br><button class="btn btn-primary" href="/lv/gen" onclick="window.location.href = '/lv/gen'">Generate Link</button></p></center>
 										<% } else { %>
-										<p>Every Linkvertise link completed, you gain an amount coins!<br>Generate a link by pressing the button below:<br><br><button class="btn btn-primary" href="/lv/gen" onclick="window.location.href = '/lv/gen'">Generate Link</button></p>
+     <center><h3>You can now earn Witchly Coins using linkvertise!</h3><br>
+     <p>Every Linkvertise link completed, you gain an amount coins!<br>Generate a link by pressing the button below:<br><br><button class="btn btn-primary" href="/lv/gen" onclick="window.location.href = '/lv/gen'">Generate Link</button></p></center>
 										<% } %>
 									</div>
               </div>
